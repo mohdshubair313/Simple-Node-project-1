@@ -1,0 +1,17 @@
+*{
+    background-color: rgb(238, 128, 116);
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(124, 22, 22);
+    font-size: 100px;
+}
+
+#contentpara{
+    font-family: cursive;
+    font-weight: 400px;
+    font-size: larger;
+}

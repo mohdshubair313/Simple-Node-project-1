@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <h1>Hi Users, I hope you doing well!!</h1>
+    <hr>
+    <br>
+    <h2 class="heading"><u>Quora</u></h2>
+
+    <% for(user of userData) { %>
+        <div>
+            <h1><u>@<%= user.username %></u></h1> 
+            <h3>Latest Post :-</h3>
+            <p class = "contentpara"> <%= user.content %> </p> <br>
+            <a href="/posts/<%= user.id %>">See In Details</a>
+        </div>
+    <% } %>
+
+    <a href="/posts/new">Click here to create a new Posts</a>
+</body>
+</html>
