@@ -18,6 +18,11 @@
             <h3>Latest Post :-</h3>
             <p class = "contentpara"> <%= user.content %> </p> <br>
             <a href="/posts/<%= user.id %>">See In Details</a>
+            <br>
+            <a href="/posts/<%= user.id %>/edit">Edit Your post</a>
+            <form method="post" action="/posts/<%= user.id %>?_method=DELETE">
+                <button type="submit" id="btn">Delete this post</button>
+            </form>
         </div>
     <% } %>
 
